@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0E32A6D-150C-44CF-81B0-81D466B71A7D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusdriverBreaksConsoleUI", "BusdriverBreaksConsoleUI\BusdriverBreaksConsoleUI.csproj", "{B14DFC75-C9C1-41AA-99B6-2CA8FA7EA5DC}"
