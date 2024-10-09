@@ -19,8 +19,6 @@ class Program
             mainMenu.AddMenuItems(new List<MenuItem>()
             {
                 new("I", "Insert drivers breaks", HandleInput),
-                // new("R", "Previous Results", See Previous Results)
-               
             });
             mainMenu.Run();
         }
@@ -73,14 +71,18 @@ class Program
     {
         var breaks = new List<(string, string)>();
         
-        Console.WriteLine("Enter driver break times. Time should be in format: HH:MMHH:MM format (e.g., 10:1511:30). Press escape key to quit");
+        Console.WriteLine("Enter driver break times. Time should be in format: HH:MMHH:MM format (e.g., 10:1511:30). Write 'quit' to exit.");
 
-        while (Console.ReadKey().Key != ConsoleKey.Escape)
+        while (true)
         {
             Console.WriteLine("Add break: ");
             var input = Console.ReadLine()?.Trim();
-
             var times = ParseTime(input);
+            if (input.ToLower() == "quit")
+            {
+                Console.WriteLine("Exiting...");
+                break;
+            }
             if (times != null)
             {
                 breaks.Add(times.Value);

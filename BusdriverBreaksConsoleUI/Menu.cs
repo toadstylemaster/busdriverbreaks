@@ -12,8 +12,6 @@ namespace BusdriverBreaksConsoleUI
 
         private readonly List<MenuItem> _menuItems = new List<MenuItem>();
         private readonly MenuItem _menuItemExit = new MenuItem("E", "Exit", null);
-        private readonly MenuItem _menuItemReturn = new MenuItem("R", "Return", null);
-        private readonly MenuItem _menuItemMain = new MenuItem("M", "Main", null);
 
         private HashSet<string> _menuShortCuts = new HashSet<string>();
         private HashSet<string> _menuSpecialShortCuts = new HashSet<string>();
@@ -30,16 +28,6 @@ namespace BusdriverBreaksConsoleUI
             switch (_menuLevel)
             {
                 case EMenuLevel.Root:
-                    _menuSpecialShortCuts.Add(_menuItemExit.ShortCut.ToUpper());
-                    break;
-                case EMenuLevel.First:
-                    _menuSpecialShortCuts.Add(_menuItemReturn.ShortCut.ToUpper());
-                    _menuSpecialShortCuts.Add(_menuItemMain.ShortCut.ToUpper());
-                    _menuSpecialShortCuts.Add(_menuItemExit.ShortCut.ToUpper());
-                    break;
-                case EMenuLevel.SecondOrMore:
-                    _menuSpecialShortCuts.Add(_menuItemReturn.ShortCut.ToUpper());
-                    _menuSpecialShortCuts.Add(_menuItemMain.ShortCut.ToUpper());
                     _menuSpecialShortCuts.Add(_menuItemExit.ShortCut.ToUpper());
                     break;
             }
@@ -82,9 +70,6 @@ namespace BusdriverBreaksConsoleUI
 
             _menuShortCuts = new HashSet<string>();
             _menuSpecialShortCuts = new HashSet<string>();
-
-            _menuSpecialShortCuts.Add(_menuItemReturn.ShortCut.ToUpper());
-            _menuSpecialShortCuts.Add(_menuItemMain.ShortCut.ToUpper());
             _menuSpecialShortCuts.Add(_menuItemExit.ShortCut.ToUpper());
         }
 
@@ -135,7 +120,6 @@ namespace BusdriverBreaksConsoleUI
                 }
             } while (!runDone);
 
-            if (Input == _menuItemReturn.ShortCut.ToUpper()) return "";
 
             return Input ?? "";
         }
@@ -156,15 +140,6 @@ namespace BusdriverBreaksConsoleUI
             switch (_menuLevel)
             {
                 case EMenuLevel.Root:
-                    Console.WriteLine(_menuItemExit);
-                    break;
-                case EMenuLevel.First:
-                    Console.WriteLine(_menuItemReturn);
-                    Console.WriteLine(_menuItemExit);
-                    break;
-                case EMenuLevel.SecondOrMore:
-                    Console.WriteLine(_menuItemReturn);
-                    Console.WriteLine(_menuItemMain);
                     Console.WriteLine(_menuItemExit);
                     break;
             }

@@ -4,6 +4,5 @@
     {
         Root,
         First,
-        SecondOrMore
     }
 }
