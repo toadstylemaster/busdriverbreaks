@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusdriverBreaks", "BusdriverBreaks\BusdriverBreaks.csproj", "{4783702B-E5C3-4824-A245-8391FEEE6009}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0E32A6D-150C-44CF-81B0-81D466B71A7D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusdriverBreaksConsoleUI", "BusdriverBreaksConsoleUI\BusdriverBreaksConsoleUI.csproj", "{B14DFC75-C9C1-41AA-99B6-2CA8FA7EA5DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4783702B-E5C3-4824-A245-8391FEEE6009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4783702B-E5C3-4824-A245-8391FEEE6009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4783702B-E5C3-4824-A245-8391FEEE6009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4783702B-E5C3-4824-A245-8391FEEE6009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14DFC75-C9C1-41AA-99B6-2CA8FA7EA5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14DFC75-C9C1-41AA-99B6-2CA8FA7EA5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14DFC75-C9C1-41AA-99B6-2CA8FA7EA5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14DFC75-C9C1-41AA-99B6-2CA8FA7EA5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D9FBB3E-91A4-438E-8902-B352713E6213}
+	EndGlobalSection
+EndGlobal
